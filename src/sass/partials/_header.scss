@@ -1,0 +1,95 @@
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $blanco;
+    padding: 2rem;
+
+    @include telefono {
+        gap: 1rem;
+        flex-direction: column;
+    }
+    
+
+    h1{
+        a{
+            color: black;
+            span{
+                color: $azul;
+            }
+        }
+        
+    }
+}
+
+.nav-bar{
+    ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        padding: 0;
+        margin: 0;
+
+        @include telefono {
+            display: none;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        li{
+            list-style: none;
+            a{
+                color: $azul;
+                font-family: $fuentePrincipal;
+                font-size: x-large;
+
+                &:hover{
+                    color: $naranja;
+                    transition: color ease-in-out .3s;
+                }
+            }
+        }
+    }
+}
+
+.btn-sesion, .btn-cerrar-sesion{
+    color: $blanco;
+    background-color: $azul;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+
+
+    &:hover{
+        background-color: $naranja;
+        transition: background-color ease-in-out .3s;
+    }
+
+    @include telefono {
+        display: none;
+    }
+}
+
+.btn-cerrar-sesion{
+    background-color: $rojo_claro;
+
+    &:hover{
+        background-color: $rojo;
+    }
+}
+
+.menu-nav{
+    color: $azul;
+    cursor: pointer;
+
+    &:hover{
+        color: $marron;
+        transition: color ease-in-out .3s;
+    }
+
+    @include telefono {
+        display: block;
+    }
+}

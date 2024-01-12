@@ -1,0 +1,8 @@
+###################################################################################################################################
+
+Errores:
+- Mostrar errores si no se ha podido crear la receta
+- Mostrar mensajes si se ha podido editar la receta correctamente.
+- Crea dos imagenes cuando actualizas la receta en caso de que añadas una nueva imagen
+
+- Rediseñar contacto

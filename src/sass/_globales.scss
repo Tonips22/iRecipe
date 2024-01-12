@@ -1,0 +1,38 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    margin: 0;
+    padding: 0;
+    background-color: $gris;
+    font-family: $fuenteSecundaria;
+
+}
+
+h1,h2,h3, p{
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    width: 95%;
+    margin: 0 auto;
+}
+
+.display-none{
+    display: none;
+}

@@ -1,0 +1,118 @@
+.ini-seccion{
+    background-color: $marron;
+    height: calc(100vh - 152px);
+
+    @include telefono {
+        height: calc(100vh - 192px);
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.ini-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+
+    background-color: $azul;
+    width: 50%;
+    padding: 2rem;
+    box-shadow: 5px 5px 10px #00000080;
+
+    @include tablet {
+        width: 80%;
+    }
+
+    @include telefono {
+        width: 95%;
+    }
+
+    h2{
+        font-family: $fuentePrincipal;
+        color: $blanco;
+        font-size: 5rem;
+    }
+    
+}
+
+.ini-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+
+    label{
+        color: $blanco;
+    }
+
+    input{
+        outline: none;
+        border-radius: .5rem;
+        border: 2px solid $blanco;
+        padding: 1rem;
+        background-color: $blanco;
+        width: 80%;
+        font-size: 1.6rem;
+
+        &:focus{
+            border: 2px solid $naranja;
+            transition: border ease-in-out .3s;
+        }
+
+        &:valid{
+            border: 2px solid $verde;
+            transition: border ease-in-out .3s;
+        }
+    }
+
+    
+}
+
+.submit-reg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+
+    input{
+        background-color: $naranja;
+        color: $blanco;
+        padding: 1rem 4rem;
+        border: none;
+        border-radius: .5rem;
+        cursor: pointer;
+        width: 80%;
+        font-size: 1.6rem;
+        font-weight: bold;
+
+
+        &:hover{
+            background-color: $verde;
+            transition: background-color ease-in-out .3s;
+
+        }
+
+    }
+
+    p{
+        font-size: 1.2rem;
+        color: $blanco;
+        
+        a{
+            color: $naranja;
+            font-weight: bold;
+
+            &:hover{
+                color: $verde;
+                transition: color ease-in-out .3s;
+            }
+        }
+    }
+}

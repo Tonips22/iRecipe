@@ -1,0 +1,49 @@
+.errores{
+    width: 50%;
+    top: 10%;
+    left: 25%;
+    position: absolute;
+    // background-color: $marron;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.error-notify{
+    background-color: $naranja;
+    color: $blanco;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+
+    animation: notificacion ease-in both 10s;
+
+}
+
+.mensajes{
+    width: 50%;
+    top: 10%;
+    left: 25%;
+    position: absolute;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 0;
+}
+
+.msg-notify{
+    background-color: $verde;
+    color: $blanco;
+    width: 50%;
+    text-align: center;
+    font-weight: bold;
+    padding: 1rem;
+
+    animation: notificacion ease-in both 10s;
+
+}

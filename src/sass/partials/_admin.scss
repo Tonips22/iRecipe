@@ -1,0 +1,44 @@
+
+.admin{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    gap: 2rem;
+
+}
+
+.btn-crear{
+    padding: 1rem 4rem;
+    color: $blanco;
+    background-color: $azul;
+    font-weight: bold;
+    border-radius: 1rem;
+
+    &:hover{
+        background-color: $verde;
+        transition: background-color ease-in-out 0.3s;
+    }
+}
+
+.vacio{
+    width: 100%;
+    min-height: calc(100vh - 238px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    h2{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 5rem;
+        color: $marron;
+    }
+    
+
+
+    @include telefono {
+        min-height: calc(100vh - 278px);
+    }
+}

@@ -1,0 +1,14 @@
+footer{
+    background-color: $azul;
+    padding: 2rem;
+}
+
+.footer{
+    text-align: center;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    span{
+        color: $naranja;
+    }
+}

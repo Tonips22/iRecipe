@@ -1,0 +1,18 @@
+{
+  "name": "irecipe",
+  "version": "1.0.0",
+  "description": "iRecipe -- Mi Primer Proyecto --",
+  "main": "index.js",
+  "scripts": {
+    "sass": "npx sass --watch src/sass:assets/css",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "php": "php -S localhost:3000",
+    "start": "npm-run-all -p php sass"
+  },
+  "author": "Antonio García Torres",
+  "license": "ISC",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.69.5"
+  }
+}

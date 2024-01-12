@@ -1,0 +1,110 @@
+.recetas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    gap: 4rem;
+    margin: 2rem auto;
+    min-height: calc(100vh - 258px);
+
+
+    @include tablet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @include telefono {
+        min-height: calc(100vh - 298px);
+    }
+}
+
+.receta{
+    background-color: $marron;
+    box-shadow: 5px 5px 10px #00000080;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    gap: 1rem;
+    width: 100%;
+    height: 20rem;
+    padding-left: 1rem;
+    
+    cursor: pointer;
+
+    overflow: hidden;
+
+    img{
+        width: 50%;
+        height: 100%;
+    }
+
+    h2{
+        color: $blanco;
+        width: 50%;
+        text-align: center;
+    }
+
+    
+}
+
+.info-receta{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    animation: fade-up ease-in-out both .3s;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+
+    background-color: #000000c0;
+
+    h2{
+        z-index: 1;
+        color: $blanco;
+        width: 100%;
+
+    }
+
+    p{
+        z-index: 1;
+        color: $blanco;
+        font-size: 1.4rem;
+        
+        @include telefono {
+            font-size: 1.2rem;
+        }
+    }
+
+    .usuario{
+        color: $naranja;
+    }
+}
+
+.vacio-index{
+    width: 100%;
+    min-height: calc(100vh - 153px);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    h2{
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 5rem;
+        color: $marron;
+    }
+    
+
+
+    @include telefono {
+        min-height: calc(100vh - 193px);
+    }
+}

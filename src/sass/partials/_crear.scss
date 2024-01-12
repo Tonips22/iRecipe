@@ -1,0 +1,84 @@
+
+.crear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $marron;
+    padding: 2rem;
+    gap: 4rem;
+
+    h2{
+        font-family: $fuentePrincipal;
+        font-size: 5rem;
+        color: $blanco;
+    }
+}
+
+.form-crear{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    width: 100%;
+}
+
+.crear-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 80%;
+
+    @include telefono {
+        width: 95%;
+    }
+
+    input, textarea{
+        outline: none;
+        border: 2px solid $blanco;
+        background-color: $blanco;
+        padding: 1rem 2rem ;
+        border-radius: .5rem;
+        width: 100%;
+        font-size: 1.6rem;
+        font-family: $fuenteSecundaria;
+
+
+        &:focus{
+            border: 2px solid $naranja;
+            transition: border ease-in-out .3s;
+        }
+
+        &:valid{
+            border: 2px solid $verde;
+            transition: border ease-in-out .3s;
+        }
+
+    }
+
+    textarea{
+        min-height: 40rem;
+        max-width: 100%;
+    }
+}
+
+
+.crear-submit{
+    width: 80%;
+    padding: 1rem 4rem;
+    color: $blanco;
+    font-weight: bold;
+    background-color: $azul;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+
+    @include telefono {
+        width: 95%;
+    }
+
+    &:hover{
+        background-color: $verde;
+        transition: background-color ease-in-out .3s;
+    }
+}
